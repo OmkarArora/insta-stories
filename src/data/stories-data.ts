@@ -122,7 +122,25 @@ export const storiesData: UserStories[] = [
 				userAvatar:
 					"https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?auto=compress&cs=tinysrgb&w=200",
 				imageUrl:
-					"https://images.pexels.com/photos/1461694/pexels-photo-1461694.jpeg?auto=compress&cs=tinysrgb&w=800",
+					"https://images.pexels.com/photos/31979192/pexels-photo-31979192/free-photo-of-fresh-asparagus-and-artichoke-with-ingredients-flat-lay.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+				viewed: false,
+			},
+		],
+	},
+	{
+		userId: "6",
+		username: "nick_fury",
+		userAvatar:
+			"https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		viewed: false,
+		stories: [
+			{
+				id: "6-1",
+				username: "nick_fury",
+				userAvatar:
+					"https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+				imageUrl:
+					"https://images.pexels.com/photos/31995895/pexels-photo-31995895/free-photo-of-turkish-coffee-with-scenic-bursa-view.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 				viewed: false,
 			},
 		],

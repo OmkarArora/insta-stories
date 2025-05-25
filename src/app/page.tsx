@@ -1,4 +1,5 @@
 import StoryList from "@/components/stories/StoryList";
+import StoryViewer from "@/components/stories/StoryViewer";
 
 export default function Home() {
 	return (
@@ -16,7 +17,7 @@ export default function Home() {
 			</div>
 
 			{/* Story viewer rendered at the root level */}
-			{/* <StoryViewer /> */}
+			<StoryViewer />
 		</div>
 	);
 }

@@ -1,6 +1,7 @@
 import { UserStories } from "@/types/stories";
 import React from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 interface StoryItemProps {
 	userStory: UserStories;
@@ -32,10 +33,12 @@ const StoryItem: React.FC<StoryItemProps> = ({ userStory, index, onPress }) => {
 							: "w-[calc(100%-4px)] h-[calc(100%-4px)] m-[2px]"
 					} rounded-full overflow-hidden`}
 				>
-					<img
+					<Image
 						src={userAvatar}
 						alt={username}
 						className="w-full h-full object-cover"
+						width={40}
+						height={40}
 					/>
 				</div>
 			</div>
