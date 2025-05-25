@@ -14,7 +14,7 @@ export default function StoryViewer() {
 
 	return (
 		<Dialog open={isOpen} onOpenChange={onOpenChange}>
-			<DialogContent className="sm:max-w-screen h-screen w-screen rounded-none border-none p-0 outline-none max-w-screen max-h-screen ">
+			<DialogContent className="sm:max-w-screen h-[100dvh] w-screen rounded-none border-none p-0 outline-none max-w-screen max-h-screen">
 				<DialogTitle hidden>Instagram Stories</DialogTitle>
 				<StoriesCarousel closeContainer={() => onOpenChange(false)} />
 			</DialogContent>
