@@ -5,23 +5,27 @@ import { create } from "zustand";
 type StoriesStore = {
 	isOpen: boolean;
 	data: UserStories[];
-	defaultActiveIndex: number;
+
+	activeIndex: number;
+	setActiveIndex: (index: number) => void;
 
 	initializeData: (data: UserStories[]) => void;
-	openViewer: (defaultActiveIndex: number) => void;
+	openViewer: (activeIndex: number) => void;
 	closeViewer: () => void;
 };
 
 export const useStoriesStore = create<StoriesStore>()((set) => ({
 	isOpen: false,
 	data: storiesData,
-	defaultActiveIndex: 0,
+
+	activeIndex: 0,
+	setActiveIndex: (index) => set({ activeIndex: index }),
 
 	initializeData: (data) => set({ data }),
-	openViewer: (defaultActiveIndex) =>
+	openViewer: (activeIndex) =>
 		set({
 			isOpen: true,
-			defaultActiveIndex,
+			activeIndex,
 		}),
-	closeViewer: () => set({ isOpen: false, defaultActiveIndex: 0 }),
+	closeViewer: () => set({ isOpen: false, activeIndex: 0 }),
 }));
